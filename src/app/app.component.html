@@ -1,0 +1,59 @@
+<div style="display:flex">
+  <div>
+    <div #panel id="panel1">
+      <section
+        style="height: 500px; border: 1px solid black; margin: 10px; padding: 10px;"
+      >
+        Section 1
+      </section>
+    </div>
+
+    <div #panel id="panel2">
+      <section
+        style="height: 500px; border: 1px solid black; margin: 10px; padding: 10px;"
+      >
+        Section 2
+      </section>
+    </div>
+
+    <div #panel id="panel3">
+      <section
+        style="height: 500px; border: 1px solid black; margin: 10px; padding: 10px;"
+      >
+        Section 3
+      </section>
+    </div>
+  </div>
+
+  <div>
+    <ul style="list-style: none; padding: 0; position:sticky; top:0;">
+      <li style="margin-bottom: 10px;">
+        <a
+          (click)="scrollToSection('section1')"
+          [ngClass]="{ 'active-link': currentSection === 'section1' }"
+          id="section1"
+          #section
+          >Link to Section 1</a
+        >
+      </li>
+      <li style="margin-bottom: 10px;">
+        <a
+          (click)="scrollToSection('section2')"
+          [ngClass]="{ 'active-link': currentSection === 'section2' }"
+          id="section2"
+          #section
+          >Link to Section 2</a
+        >
+      </li>
+      <li>
+        <a
+          [ngClass]="{ 'active-link': currentSection === 'section3' }"
+          (click)="scrollToSection('section3')"
+          id="section3"
+          #section
+          >Link to Section 3</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-link {
+  color: purple;
+}
