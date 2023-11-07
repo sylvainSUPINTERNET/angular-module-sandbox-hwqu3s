@@ -46,7 +46,6 @@ export class AppComponent {
   }
 
   scrollToSection(sectionId: string) {
-    this.currentSection = sectionId;
     let panelId = `panel${sectionId.split('section')[1]}`;
     console.log('Scroll to : ', panelId);
     this.panels
